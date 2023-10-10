@@ -1,19 +1,69 @@
 <!DOCTYPE html>
-<html>
-<head>
-<script type="text/javascript">
-function load()
-{ 
-  window.open('https://23cadens.github.io/TabSpamer/'); 
-  
-
-}
-  function draw(){
- window.open('https://23cadens.github.io/TabSpamer/'); 
-  }
-</script>
-</head>
-
-<body onload="load()">
+<FONT COLOR="rgb(129,0,0)">
+  <body style="background-color:#190074;">
 </body>
-</html> 
+	<title>Button and Iframe Example</title>
+	<style>
+		#button-container {
+			display: none;
+			justify-content: space-between;
+			align-items: center;
+			margin: 20px;
+		}
+		.button {
+			background-color: rgba(248,141,141,0.65);
+			color: rgb(86,102,255)
+			padding: 10px;
+			border: none;
+			cursor: pointer;
+		}
+		#iframe-container {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<label for="password">Enter Password:</label>
+	<input type="password" id="password" name="password">
+	<button onclick="checkPassword()">Submit</button>
+	<div id="button-container">
+		<button class="button" onclick="hideButtons('https://nebulaproxy.io/')">Nebula Proxy</button>
+		<button class="button" onclick="hideButtons('https://bing.com')">Bing</button>
+		<button class="button" onclick="hideButtons('https://burritoedition.github.io/emu/Minecraft/web/index.html')">Minecraft1.5.2</button>
+		<button class="button" onclick="hideButtons('https://www.example4.com')">Button 4</button>
+		<button class="button" onclick="hideButtons('https://www.12345.com')">Button 5</button>
+	</div>
+	<div id="iframe-container">
+		<iframe id="my-iframe" frameborder="0"></iframe>
+	</div>
+	<t>the password is 1234<t/>
+  <script>
+		function checkPassword() {
+			var password = document.getElementById("password").value;
+			if (password === "1234") {
+				document.getElementById("button-container").style.display = "flex";
+			}
+		}
+		function hideButtons(url) {
+			document.getElementById("button-container").style.display = "none";
+			document.getElementById("iframe-container").style.display = "block";
+			document.getElementById("my-iframe").src = url;
+			document.getElementById("my-iframe").style.position = "fixed";
+			document.getElementById("my-iframe").style.top = "0";
+			document.getElementById("my-iframe").style.left = "0";
+			document.getElementById("my-iframe").style.width = "100%";
+			document.getElementById("my-iframe").style.height = "100%";
+		}
+	</script>
+      <br /><br>
+      <t> This site is design to block internet censorship and to to put your favorite sites in a single location. future versions will be linked below if there are any.</t>
+        <br /><br>
+      <t>We are not responsible for any misuse of this program. We tell you to use this at your own risk and to think before you act. </t>
+       <br /><br>
+        <t>Full Screen Version: N/A</t>
